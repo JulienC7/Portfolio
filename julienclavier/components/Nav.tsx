@@ -4,19 +4,19 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import "@/styles/Nav.scss";
 
-export default function Nav() {
+export default function Nav({ showTitle = false }) {
   const pathname = usePathname();
 
   const navLinks = [
-    { href: "/", label: "ACCUEIL" },
-    { href: "/about", label: "À PROPOS" },
-    { href: "/projects", label: "PROJET" },
-    { href: "/contact", label: "CONTACT" },
+    { href: "#", label: "ACCUEIL" },
+    { href: "#about", label: "À PROPOS" },
+    { href: "#projects", label: "PROJET" },
+    { href: "#contact", label: "CONTACT" },
   ];
 
   return (
     <nav>
-      <div className="nav-title">JULIEN CLAVIER</div>
+      <div className={`nav-title ${showTitle ? "show" : "hide"}`}>JULIEN CLAVIER</div>
       <div className="nav-links">
         {navLinks.map((link) => (
           <Link

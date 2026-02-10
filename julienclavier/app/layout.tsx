@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Saira300, Cinzel400, Cinzel700 } from "@/fonts/fonts";
 import "./globals.css";
+import "@/styles/Header.scss";
+import "@/styles/Nav.scss";
+import "@/styles/About.scss";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,6 +32,7 @@ export default function RootLayout({
       className={`${Saira300.variable} ${Cinzel400.variable} ${Cinzel700.variable}`}
     >
       <body
+        suppressHydrationWarning={true}
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
