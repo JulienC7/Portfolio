@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Saira300, Cinzel400, Cinzel700 } from "@/fonts/fonts";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -23,7 +24,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className={`${Saira300.variable} ${Cinzel400.variable} ${Cinzel700.variable}`}
+    >
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
