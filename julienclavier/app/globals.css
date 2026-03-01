@@ -21,6 +21,17 @@ html {
   scroll-behavior: smooth;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+}
+
 body {
   background: #efe8d8;
   color: var(--foreground);

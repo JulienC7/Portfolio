@@ -2,6 +2,7 @@
   width: 100%;
   padding: 80px 40px;
   background-color: #efe8d8;
+  scroll-margin-top: 110px;
 
   .about-container {
     max-width: 1200px;
@@ -34,6 +35,16 @@
     justify-content: center;
     align-items: center;
 
+    .about-school-image {
+      width: 100%;
+      max-width: 100%;
+      aspect-ratio: 1;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+      display: block;
+    }
+
     .image-placeholder {
       width: 100%;
       aspect-ratio: 1;
@@ -44,22 +55,61 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .about {
-    padding: 40px 20px;
+    padding: 60px 30px;
 
     .about-container {
-      grid-template-columns: 1fr;
       gap: 40px;
     }
 
     .about-content {
       h2 {
-        font-size: 32px;
+        font-size: 36px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 40px 20px;
+    scroll-margin-top: 140px;
+
+    .about-container {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+
+    .about-content {
+      h2 {
+        font-size: 28px;
       }
 
       p {
         font-size: 14px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    padding: 30px 15px;
+    scroll-margin-top: 150px;
+
+    .about-container {
+      gap: 20px;
+    }
+
+    .about-content {
+      h2 {
+        font-size: 22px;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 13px;
       }
     }
   }

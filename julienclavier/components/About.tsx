@@ -7,13 +7,19 @@ export default function About() {
         <div className="about-content">
           <h2>UNE FORMATION SOLIDE<br />TOURNÉE VERS L'AVENIR</h2>
           <p>
-            Actuellement en 2e année à l'IIM, je construis mon profil professionnel autour du développement web. 
-            Mes projets académiques et mes premiers stages m'ont permis de développer une rigueur et une 
-            curiosité que je souhaite désormais mettre à profit au sein d'une équipe dynamique.
+            Étudiant en Développement Web à l'IIM, je me consacre à la conception d'interfaces performantes et à la résolution de problématiques techniques concrètes.
+          </p>
+          <p>
+            Mon approche repose sur deux piliers : une rigueur d'exécution indispensable au code de qualité et une curiosité technologique qui me pousse à explorer de nouveaux frameworks et langages. À travers mes projets académiques et personnels, je m'attache à transformer des concepts complexes en solutions fluides et maintenables.
           </p>
         </div>
         <div className="about-image">
-          <div className="image-placeholder"></div>
+          <img
+            src="/about/30-ans-IIM-Digital-School.webp"
+            alt="IIM Digital School"
+            className="about-school-image"
+            loading="lazy"
+          />
         </div>
       </div>
     </section>
